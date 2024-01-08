@@ -2,6 +2,10 @@
   "name": "expo-supabase",
   "version": "1.0.0",
   "main": "expo-router/entry",
+  "engines": {
+    "node": ">=18.19",
+    "npm": ">=10.2"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
