@@ -13,7 +13,7 @@ export default function AuthPage() {
 
   return (
     <View style={styles.container}>
-      <Stack.Screen options={{ headerShown: true, title: 'Supabase Expo Router App' }} />
+      <Stack.Screen options={{ headerShown: true, title: 'Auth Screen' }} />
       <View style={[styles.verticallySpaced, styles.mt20]}>
         <TextInput
           style={styles.textInput}
