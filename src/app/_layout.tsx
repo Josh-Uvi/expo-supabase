@@ -2,6 +2,7 @@ import { Slot, useRouter, useSegments } from 'expo-router';
 import { useEffect } from 'react';
 
 import { SupabaseProvider } from '@/hooks/AuthProvider';
+import { NewsProvider } from '@/hooks/NewsProvider';
 import { useSupabase } from '@/hooks/useSupabase';
 
 const InitialLayout = () => {
@@ -30,7 +31,9 @@ const InitialLayout = () => {
 export default function RootLayout() {
   return (
     <SupabaseProvider>
-      <InitialLayout />
+      <NewsProvider>
+        <InitialLayout />
+      </NewsProvider>
     </SupabaseProvider>
   );
 }
