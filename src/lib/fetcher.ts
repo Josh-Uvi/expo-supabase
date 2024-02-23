@@ -57,6 +57,9 @@ export const headlinesByCountryApi = async (country: string): Promise<Article[]>
       title: article.title,
       description: article.description,
       url: article.url,
+      author: article.author,
+      source: article.source,
+      publishedAt: article.publishedAt,
     }));
   } catch (error) {
     console.error('Error fetching news:', error);

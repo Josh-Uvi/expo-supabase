@@ -3,12 +3,21 @@ import { Stack } from 'expo-router';
 
 export default function HomeLayout() {
   return (
-    <Stack
-      screenOptions={{
-        title: 'Home',
-        headerShown: true,
-        headerLeft: () => <DrawerToggleButton />,
-      }}
-    />
+    <Stack>
+      <Stack.Screen
+        name="index"
+        options={{
+          title: 'Home',
+          headerShown: true,
+          headerLeft: () => <DrawerToggleButton />,
+        }}
+      />
+      <Stack.Screen
+        name="modal"
+        options={{
+          presentation: 'modal',
+        }}
+      />
+    </Stack>
   );
 }
